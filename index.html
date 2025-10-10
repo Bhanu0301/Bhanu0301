@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bhanuprakash Reddy | Portfolio</title>
   <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9fafc;
@@ -14,14 +20,16 @@
       line-height: 1.6;
     }
 
+    /* Header */
     header {
       background: linear-gradient(135deg, #0073e6, #4a90e2);
       color: white;
-      padding: 2rem 10%;
+      padding: 2rem 8%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      animation: fadeInDown 1s ease;
     }
 
     header img {
@@ -30,31 +38,58 @@
       width: 120px;
       object-fit: cover;
       border: 3px solid #fff;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
     }
 
     header .info {
       flex: 1;
       min-width: 260px;
       margin-left: 2rem;
+      animation: fadeInRight 1.2s ease;
     }
 
-    header h1 { margin: 0; font-size: 2rem; }
-    header p { margin: .4rem 0; font-weight: 500; }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: .4rem 0;
+      font-weight: 500;
+    }
 
     .contact a {
       color: #fff;
       text-decoration: underline;
-      margin: 0 0.4rem;
+      margin: 0 0.3rem;
       font-weight: 500;
+      transition: color 0.3s ease;
     }
 
+    .contact a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Section Base Style */
     section {
-      margin: 2rem 10%;
+      margin: 2rem 8%;
       background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
     }
 
     h2 {
@@ -64,35 +99,119 @@
       margin-top: 0;
     }
 
-    ul { line-height: 1.7; }
+    ul {
+      line-height: 1.7;
+      padding-left: 1.2rem;
+    }
 
-    a { color: #0073e6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
 
+    a:hover {
+      text-decoration: underline;
+      color: #005bb5;
+    }
+
+    /* Skills Section Grid */
     .skills-grid {
-      display: flex; 
-      flex-wrap: wrap;
-      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
       margin-top: 1rem;
     }
+
     .skills-grid div {
-      flex: 1 1 220px;
       background: #eef4ff;
-      padding: 0.8rem 1rem;
+      padding: 0.9rem 1rem;
       border-radius: 8px;
+      transition: background 0.3s ease;
     }
 
+    .skills-grid div:hover {
+      background: #dce9ff;
+    }
+
+    /* About Section */
     .about {
       font-size: 1.05rem;
       color: #333;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 1rem;
       background: #f0f4f8;
       color: #555;
       font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-bottom: 1rem;
+      }
+
+      header .info {
+        margin-left: 0;
+      }
+
+      section {
+        margin: 1.2rem 5%;
+        padding: 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 15px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      header img {
+        height: 100px;
+        width: 100px;
+      }
+
+      section {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -116,12 +235,11 @@
   <section class="about">
     <h2>About Me</h2>
     <p>
-      Passionate <strong>Software Engineer</strong> with hands-on experience in 
+      Passionate <strong>Software Engineer</strong> experienced in 
       <strong>Java, Spring Boot, Microservices, and FinTech application development</strong>. 
       Currently part of the <strong>ISO 20022 Translation Project</strong> at Oracle Financial Software Services, 
       delivering scalable, secure, and high-performance banking solutions. 
-      I love tackling real-world problems, optimizing systems for efficiency, and building end-to-end applications that make an impact.
-      Open to opportunities in <strong>Backend Engineering, Full-Stack Development, and Cloud-based FinTech platforms</strong>.
+      I enjoy building efficient systems, solving real-world challenges, and creating impactful end-to-end applications.
     </p>
   </section>
 
@@ -130,11 +248,10 @@
     <h3>Oracle Financial Software Services Pvt. Ltd. (Aug 2024 – Present)</h3>
     <p><strong>Associate Consultant — Java, Spring Boot, Microservices, SQL | Bangalore, India</strong></p>
     <ul>
-      <li>Contributed with angular components development and wiring backend services using Java, Spring Boot, and OracleDB for ISO 20022 Translation (GIB).</li>
-      <li>Improved scalability via pagination, query optimization, and indexing — achieving 80%+ faster response times.</li>
-      <li>Implemented secure maker–checker workflows, audit logging, and reusable design patterns (Factory, Observer).</li>
-      <li>Collaborated with DevOps teams on CI/CD setup, environment configuration, and production support.</li>
-      <li>Ensured system reliability and compliance in large-scale banking transactions.</li>
+      <li>Developed Angular components and backend REST APIs for ISO 20022 Translation (GIB).</li>
+      <li>Optimized query performance, achieving 80% faster response times via pagination and indexing.</li>
+      <li>Implemented secure maker–checker workflows, audit logs, and reusable design patterns.</li>
+      <li>Collaborated with DevOps teams on CI/CD pipelines and production environment reliability.</li>
     </ul>
   </section>
 
@@ -144,15 +261,13 @@
       <li><b><a href="https://github.com/Bhanu0301/CropConnect">Crop-Connect</a></b> — Flutter, Firebase, TensorFlow Lite, IoT  
         <ul>
           <li>Digitized agriculture via AI-driven disease detection and IoT-based soil health analysis.</li>
-          <li>Enabled a multilingual interface, Firebase authentication, and real-time sensor data visualization.</li>
-          <li>Integrated REST APIs for weather and agri-news, improving decision-making for farmers.</li>
+          <li>Enabled multilingual interface, Firebase auth, and real-time sensor data visualization.</li>
         </ul>
       </li>
       <li><b><a href="https://github.com/Bhanu0301/email-marketing-platform">Email Marketing Platform</a></b> — Node.js, Express, MongoDB, MailChimp  
         <ul>
           <li>Built a personalized email campaign system for Reliance Digital with automation using MailChimp API.</li>
-          <li>Enhanced link security by integrating UUIDv4, reducing risk of duplication or collision.</li>
-          <li>Improved customer engagement analytics using campaign insights and MongoDB data queries.</li>
+          <li>Enhanced link security using UUIDv4 and improved engagement analytics via MongoDB queries.</li>
         </ul>
       </li>
     </ul>
@@ -162,22 +277,21 @@
     <h2>Technical Skills</h2>
     <div class="skills-grid">
       <div><b>Languages:</b> Java, SQL, Python (learning)</div>
-      <div><b>Backend:</b> Spring Boot, RESTful Web Services, Microservices, Low level design</div>
+      <div><b>Backend:</b> Spring Boot, REST APIs, Microservices, LLD</div>
       <div><b>Frontend:</b> Angular, HTML, CSS, TypeScript</div>
       <div><b>Databases:</b> OracleDB, MySQL, MongoDB</div>
-      <div><b>Messaging & Integration:</b> ActiveMQ, Kafka (learning)</div>
-      <div><b>DevOps & Tools:</b> Git, SVN, Citrix, Postman</div>
-      <div><b>Other:</b> Data Structures & Algorithms, Low-Level Design, GenAI (LangChain, OpenAI API - learning)</div>
+      <div><b>Messaging:</b> ActiveMQ, Kafka (learning)</div>
+      <div><b>DevOps:</b> Git, SVN, Citrix, Postman</div>
+      <div><b>Other:</b> DSA, LLD, GenAI (LangChain, OpenAI API - learning)</div>
     </div>
   </section>
 
   <section>
     <h2>Achievements</h2>
     <ul>
-      <li>🏆 <strong>Oracle Spark Pacesetter Award (FY25)</strong> for exceptional contributions to the GIB Translator project.</li>
-      <li>💡 Solved <strong>500+ Data Structures & Algorithms</strong> problems on LeetCode and GeeksforGeeks.</li>
-      <li>🎓 Delivered internal sessions on <strong>Angular boot up, Spring Boot API development and message translation workflows</strong>.</li>
-      <li>🚀 Consistently recognized for <strong>problem-solving, innovation, and collaboration</strong> in production support.</li>
+      <li>🏆 <strong>Oracle Spark Pacesetter Award (FY25)</strong> for contributions to the GIB Translator project.</li>
+      <li>💡 Solved <strong>500+ DSA</strong> problems on LeetCode and GeeksforGeeks.</li>
+      <li>🎓 Delivered internal sessions on <strong>Angular, Spring Boot APIs, and Translation Workflows</strong>.</li>
     </ul>
   </section>
 
