@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bhanuprakash Reddy | Portfolio</title>
+
   <style>
-    /* General Reset */
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
@@ -29,7 +29,6 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      animation: fadeInDown 1s ease;
     }
 
     header img {
@@ -39,24 +38,17 @@
       object-fit: cover;
       border: 3px solid #fff;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      transition: transform 0.4s ease;
-    }
-
-    header img:hover {
-      transform: scale(1.05);
     }
 
     header .info {
       flex: 1;
       min-width: 260px;
       margin-left: 2rem;
-      animation: fadeInRight 1.2s ease;
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
-      letter-spacing: 0.5px;
     }
 
     header p {
@@ -69,27 +61,15 @@
       text-decoration: underline;
       margin: 0 0.3rem;
       font-weight: 500;
-      transition: color 0.3s ease;
     }
 
-    .contact a:hover {
-      color: #ffeb3b;
-    }
-
-    /* Section Base Style */
+    /* Sections */
     section {
       margin: 2rem 8%;
       background: #fff;
       padding: 1.5rem 2rem;
       border-radius: 12px;
       box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 1.2s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
     }
 
     h2 {
@@ -107,15 +87,13 @@
     a {
       color: #0073e6;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
 
     a:hover {
       text-decoration: underline;
-      color: #005bb5;
     }
 
-    /* Skills Section Grid */
+    /* Skills Grid */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -127,20 +105,8 @@
       background: #eef4ff;
       padding: 0.9rem 1rem;
       border-radius: 8px;
-      transition: background 0.3s ease;
     }
 
-    .skills-grid div:hover {
-      background: #dce9ff;
-    }
-
-    /* About Section */
-    .about {
-      font-size: 1.05rem;
-      color: #333;
-    }
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 1rem;
@@ -150,160 +116,136 @@
       margin-top: 2rem;
     }
 
-    /* Animations */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInRight {
-      from { opacity: 0; transform: translateX(-20px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
-    /* Responsive Design */
+    /* Responsive */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         text-align: center;
       }
 
-      header img {
-        margin-bottom: 1rem;
-      }
-
       header .info {
         margin-left: 0;
+        margin-top: 1rem;
       }
 
       section {
         margin: 1.2rem 5%;
-        padding: 1.2rem;
-      }
-
-      h1 {
-        font-size: 1.6rem;
-      }
-
-      h2 {
-        font-size: 1.3rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        font-size: 15px;
-      }
-
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
-      header img {
-        height: 100px;
-        width: 100px;
-      }
-
-      section {
-        padding: 1rem;
       }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <img src="img/bhanu-modified.png" alt="Bhanuprakash Reddy">
-    <div class="info">
-      <h1>VANIPENTA BHANUPRAKASH REDDY</h1>
-      <p>Associate Consultant @ Oracle Financial Software Services Pvt. Ltd.</p>
-      <div class="contact">
-        📞 +91-8904764539 | 
-        ✉️ <a href="mailto:vanipentabhanuprakashreddy@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/">LinkedIn</a> |
-        <a href="https://github.com/Bhanu0301">GitHub</a> |
-        <a href="https://leetcode.com/bhanreddy0301/">LeetCode</a> |
-        <a href="https://drive.google.com/file/d/1J2xajl6Syx08jBBInAmtS-udvmKvFfwZ/view?usp=drive_link">Resume</a>
-      </div>
+
+<header>
+  <img src="img/bhanu-modified.png" alt="Bhanuprakash Reddy">
+  <div class="info">
+    <h1>VANIPENTA BHANUPRAKASH REDDY</h1>
+    <p>Associate Consultant @ Oracle Financial Software Services</p>
+    <div class="contact">
+      📞 +91-8904764539 |
+      ✉️ <a href="mailto:vanipentabhanuprakashreddy@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/">LinkedIn</a> |
+      <a href="https://github.com/Bhanu0301">GitHub</a> |
+      <a href="https://leetcode.com/bhanreddy0301/">LeetCode</a> |
+      <a href="https://drive.google.com/file/d/1J2xajl6Syx08jBBInAmtS-udvmKvFfwZ/view">Resume</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      Passionate <strong>Software Engineer</strong> experienced in 
-      <strong>Java, Spring Boot, Angular, and FinTech application development</strong>. 
-      Currently part of the <strong>ISO 20022 Translation Project</strong> at Oracle Financial Software Services, 
-      delivering scalable, secure, and high-performance banking solutions. 
-      I enjoy building efficient systems, solving real-world challenges, and creating impactful end-to-end applications.
-    </p>
-  </section>
+<section>
+  <h2>About Me</h2>
+  <p>
+    Software Engineer with strong experience in
+    <strong>Java, Spring Boot, Angular, and FinTech application development</strong>.
+    Currently working as an <strong>Associate Consultant at Oracle Financial Software Services</strong>,
+    contributing to large-scale <strong>ISO 20022 (MT–MX) payment message translation platforms</strong>.
+    Skilled in building secure, scalable systems with maker–checker workflows,
+    audit trails, and high-throughput REST APIs.
+  </p>
+</section>
 
-  <section>
-    <h2>Experience</h2>
-    <h3>Oracle Financial Software Services Pvt. Ltd. (Aug 2024 – Present)</h3>
-    <p><strong>Associate Consultant — Java, Spring Boot, Angular, SQL | Bangalore, India</strong></p>
-    <ul>
-      <li>Developed Angular components and backend REST APIs for ISO 20022 Translation (GIB).</li>
-      <li>Optimized query performance, achieving 80% faster response times via pagination and indexing.</li>
-      <li>Implemented secure maker–checker workflows, audit logs, and reusable design patterns.</li>
-      <li>Provided production support as part of the GRS team for SNB (Saudi National Bank), ensuring smooth operations
-and timely resolution of remittance-related issues.</li>
-    </ul>
-  </section>
+<section>
+  <h2>Experience</h2>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><b><a href="https://github.com/Bhanu0301/CropConnect">Crop-Connect</a></b> — Flutter, Firebase, TensorFlow Lite, IoT  
-        <ul>
-          <li>Digitized agriculture via AI-driven disease detection and IoT-based soil health analysis.</li>
-          <li>Enabled multilingual interface, Firebase auth, and real-time sensor data visualization.</li>
-        </ul>
-      </li>
-      <li><b><a href="https://github.com/Bhanu0301/email-marketing-platform">Email Marketing Platform</a></b> — Node.js, Express, MongoDB, MailChimp  
-        <ul>
-          <li>Built a personalized email campaign system for Reliance Digital with automation using MailChimp API.</li>
-          <li>Enhanced link security using UUIDv4 and improved engagement analytics via MongoDB queries.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+  <h3>Oracle Financial Software Services Pvt. Ltd. (Aug 2024 – Present)</h3>
+  <p><strong>Associate Consultant — Java, Spring Boot, Angular, SQL | Bangalore, India</strong></p>
+  <ul>
+    <li>Developed Angular UI components for routing rules, message queues, channel configurations, and dashboards.</li>
+    <li>Designed and implemented RESTful backend services using Java, Spring Boot, and Spring Data JPA for ISO 20022 translation.</li>
+    <li>Optimized SQL queries, indexing, pagination, and transaction workflows to reduce latency and improve throughput.</li>
+    <li>Implemented maker–checker authorization, audit trail logging, and compliance-driven validations.</li>
+    <li>Collaborated with operations teams on deployments, monitoring, and incident resolution.</li>
+  </ul>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div><b>Languages:</b> Java, SQL</div>
-      <div><b>Backend:</b> Spring Boot, REST APIs, Microservices(learning)</div>
-      <div><b>Frontend:</b> Angular, HTML, CSS, TypeScript</div>
-      <div><b>Databases:</b> OracleDB, MySQL, MongoDB</div>
-      <div><b>Messaging:</b> ActiveMQ</div>
-      <div><b>DevOps:</b> Git, SVN, Citrix, Postman</div>
-      <div><b>Other:</b> DSA, LLD, GenAI (LangChain, OpenAI API - learning)</div>
-    </div>
-  </section>
+  <h3>Epsilon India (Jan 2024 – May 2024)</h3>
+  <p><strong>Project Intern — Node.js, Express.js, MongoDB, MailChimp, EJS | India</strong></p>
+  <ul>
+    <li>Developed a custom email marketing platform for Reliance Digital enabling personalized campaigns.</li>
+    <li>Implemented backend services using Node.js, Express.js, and MongoDB.</li>
+    <li>Integrated MailChimp APIs for automated email workflows.</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Achievements</h2>
-    <ul>
-      <li>🏆 <strong>Oracle Spark Pacesetter Award (FY25)</strong> for contributions to the GIB Translator project.</li>
-      <li>💡 Solved <strong>500+ DSA</strong> problems on LeetCode and GeeksforGeeks.</li>
-      <li>🎓 Delivered internal sessions on <strong>Angular, Spring Boot APIs, and Translation Workflows</strong>.</li>
-    </ul>
-  </section>
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <b><a href="https://github.com/Bhanu0301/MyWallet-Smart-Expense-Tracker">MyWallet: Smart Expense Tracker</a></b>
+      — Spring Boot, React, SQL, JWT, OpenAI API
+      <ul>
+        <li>Built a secure expense tracking platform with JWT authentication and role-based access.</li>
+        <li>Developed dashboards for monthly spending trends and category-wise budgets.</li>
+        <li>Integrated AI-powered expense categorization using OpenAI API.</li>
+      </ul>
+    </li>
 
-  <section>
-    <h2>Education</h2>
-    <p><b>CMR Institute of Technology</b> (July 2020 - June 2024)<br>
-    B.E. in Information Science and Engineering | <b>CGPA: 9.10</b></p>
-  </section>
+    <li>
+      <b><a href="https://github.com/Bhanu0301/Crop-Connect">Crop-Connect: Empowering Farmers Digitally</a></b>
+      — Flutter, Firebase, TensorFlow Lite, IoT Sensors
+      <ul>
+        <li>Digitized agriculture via AI-based disease detection and IoT-driven soil monitoring.</li>
+        <li>Implemented secure authentication, multilingual support, and real-time data storage.</li>
+        <li>Enabled a digital marketplace for agricultural products and tools.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
-  <footer>
-    © 2025 Vanipenta Bhanuprakash Reddy
-  </footer>
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div><b>Languages:</b> Java, SQL</div>
+    <div><b>Backend:</b> Spring Boot, Spring Data JPA, REST APIs</div>
+    <div><b>Frontend:</b> Angular, React, HTML, CSS</div>
+    <div><b>Databases:</b> Oracle DB, MySQL, MongoDB</div>
+    <div><b>Messaging:</b> IBM MQ, Apache Kafka</div>
+    <div><b>Tools:</b> Git, GitHub, Postman, Citrix, WebSphere</div>
+    <div><b>Core:</b> DSA, Low-Level Design, Microservices</div>
+  </div>
+</section>
+
+<section>
+  <h2>Achievements</h2>
+  <ul>
+    <li>🏆 Oracle Team Award (FY26 Q1) for ISO 20022 standardization – GIB project.</li>
+    <li>⚡ Oracle Spark Pacesetter Award (FY25) for GIB Translator contributions.</li>
+    <li>🧠 LeetCode Contest Rating: 1633.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p>
+    <b>CMR Institute of Technology</b> (July 2020 – June 2024)<br>
+    B.E. in Information Science and Engineering |
+    <b>CGPA: 9.20</b>
+  </p>
+</section>
+
+<footer>
+  © 2025 Vanipenta Bhanuprakash Reddy
+</footer>
+
 </body>
 </html>
