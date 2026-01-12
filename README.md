@@ -1,6 +1,6 @@
 # Hi, I'm Bhanuprakash Reddy
 
-**Full Stack Software Engineer**  
+**Software Engineer**  
 Java • Spring Boot • Angular • React • SQL/MySQL  
 
 ---
