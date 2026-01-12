@@ -1,8 +1,91 @@
-# Portfolio-(Using Basic HTML)
+# 👋 Hi, I'm Bhanuprakash Reddy
 
-Created A very basic HTML based Portfolio website as a part of learning through Web-development Bootcamp 2022, Udemy course.
+🚀 **Full Stack Software Engineer**  
+💻 Java | Spring Boot | Angular | React | SQL/MySQL  
+🌱 Passionate about building scalable, user-centric applications
 
+---
 
-![Screenshot (84)](https://user-images.githubusercontent.com/106879319/211323680-3115dbbb-a2e3-4b74-8ca2-7da95caec2f4.png)
-![Screenshot (85)](https://user-images.githubusercontent.com/106879319/211323692-efc70c5e-b1db-4a6d-8589-29d75e111f62.png)
-![Screenshot (90)](https://user-images.githubusercontent.com/106879319/211323707-82050b58-ab0f-4446-9ab4-e570674a5ae5.png)
+## 👨‍💻 About Me
+- 💡 Software Engineer with hands-on experience in **Java, Spring Boot, Angular, and SQL**
+- 🧠 Strong interest in **fintech systems, backend engineering, and clean UI design**
+- 🔧 Enjoy solving real-world problems with efficient and maintainable code
+- 📈 Continuously learning and improving system design and full-stack skills
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- **Java**
+- **Spring Boot**
+- REST APIs
+- Hibernate / JPA
+
+### Frontend
+- **Angular**
+- **React**
+- HTML, CSS, JavaScript
+
+### Database
+- **SQL**
+- **MySQL**
+
+### Tools & Others
+- Git & GitHub
+- Postman
+- IntelliJ / VS Code
+- Maven
+
+---
+
+## 📌 Featured Projects
+Here are a few projects that showcase my skills:
+
+- **MyWallet – Smart Expense Tracker**  
+  Java-based application to manage and track expenses efficiently.
+
+- **Crop Connect**  
+  Agriculture-focused platform integrating marketplace, AI-driven insights, and IoT concepts.
+
+- **Email Marketing Platform**  
+  Full-stack solution for personalized email campaigns with MongoDB and Mailchimp integration.
+
+- **BlogShare**  
+  Blogging platform with authentication and CRUD operations.
+
+👉 Explore more in my repositories below ⬇️
+
+---
+
+## 📄 Resume
+📌 **Resume:**  
+👉 *(Add your Google Drive / PDF link here)*
+
+---
+
+## 🔗 Connect With Me
+- 💼 **LinkedIn:**  
+  👉 *(Add your LinkedIn profile link here)*
+
+- 📧 **Email:**  
+  👉 *(Optional – add if you want recruiters to reach out directly)*
+
+---
+
+## 📊 GitHub Stats
+
+![Bhanu's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Bhanu0301&show_icons=true&theme=default)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bhanu0301&layout=compact)
+
+---
+
+## ✨ What I’m Currently Working On
+- Enhancing full-stack projects with better architecture
+- Improving Spring Boot + Angular integrations
+- Preparing for advanced backend and system design roles
+
+---
+
+⭐ **If you like my work, consider starring my repositories!**
