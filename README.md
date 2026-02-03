@@ -34,29 +34,15 @@
 
 ---
 
-## 📊 Stats
+## 📊 Stats & Activity
 
-<table align="center">
-  <tr>
-    <td colspan="2">
-      <a href="https://github.com/Bhanu0301">
-        <img src="https://github-readme-stats.vercel.app/api?username=Bhanu0301&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/Bhanu0301">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanu0301&theme=dark" alt="GitHub Streak" />
-      </a>
-    </td>
-    <td>
-      <a href="https://leetcode.com/bhanreddy0301/">
-        <img src="https://leetcard.jacoblin.cool/bhanreddy0301?theme=dark&font=Raleway" alt="LeetCode Stats" />
-      </a>
-    </td>
-  </tr>
-</table>
+![GitHub Stats](https://img.shields.io/badge/GitHub-96%20Contributions-0d1117?style=flat-square&logo=github&logoColor=white)
+![Longest Streak](https://img.shields.io/badge/Longest%20Streak-3%20days-FF6B6B?style=flat-square)
+![Current Streak](https://img.shields.io/badge/Current%20Streak-1%20day-FFA500?style=flat-square)
+
+**Top Languages**: Java • JavaScript • SQL • Python • TypeScript
+
+**LeetCode Profile**: [Visit Profile](https://leetcode.com/bhanreddy0301/) - Active Problem Solver
 
 ---
 
