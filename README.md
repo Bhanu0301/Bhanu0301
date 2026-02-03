@@ -1,89 +1,74 @@
-# Portfolio Website - Bhanuprakash Reddy
+# Hi 👋, I'm Bhanuprakash Reddy
 
-A modern, responsive portfolio website showcasing professional experience as a Software Engineer specializing in Java, Spring Boot, Angular, and FinTech applications. Built with vanilla HTML, CSS3, and JavaScript—no frameworks required.
+**Software Engineer** | FinTech | Full-Stack Developer | Hyderabad, India
 
-## 🌟 Features
+---
 
-- **Modern Design**: Gradient backgrounds, smooth animations, and professional typography
-- **Dark Mode Support**: Toggle between light and dark themes with persistent user preference
-- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
-- **Zero Dependencies**: Pure HTML, CSS3, and vanilla JavaScript
-- **Fast Performance**: Static files with instant load times
-- **Accessible**: Semantic HTML with proper contrast and keyboard navigation
+## 💻 Tech Stack
 
-## 📋 Project Structure
+**Languages**
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-```
-Portfolio-Web/
-├── index.html          # Main portfolio page
-├── contact.html        # Contact page with form
-├── README.md          # This file
-└── img/
-    └── bhanu-modified.png  # Profile picture
-```
+**Backend**
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
 
-## 🚀 Quick Start
+**Frontend**
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-Simply open `index.html` in your browser to view the portfolio. No installation or build process required.
+**Databases & Tools**
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-### Local Development
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Bhanu0301/Portfolio-Web.git
-   cd Portfolio-Web
-   ```
+## 📊 GitHub Stats
 
-2. Open in a browser:
-   - Double-click `index.html` to open locally
-   - Or use a local server: `python -m http.server 8000` (then visit `http://localhost:8000`)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Bhanu0301&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" width="48%">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanu0301&theme=dark&hide_border=true" alt="GitHub Streak" width="48%">
+</div>
 
-## 🎨 Sections
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bhanu0301&layout=compact&theme=dark&hide_border=true" alt="Top Languages" width="50%">
+</div>
 
-1. **Header** - Quick introduction with contact links and professional title
-2. **About Me** - Comprehensive background and professional summary
-3. **Professional Experience** - Work history and roles
-4. **Projects** - Featured projects with descriptions
-5. **Technical Skills** - Organized skill categories
-6. **Achievements** - Awards and recognition
-7. **Education** - Academic credentials
-8. **Contact** - Link to dedicated contact form
+---
 
-## 🎨 Dark Mode Theme
+## 🏢 Currently
 
-The portfolio includes a built-in dark mode system:
-- **Auto-detection**: Respects your system's dark mode preference
-- **Manual Toggle**: Click the 🌙/☀️ button in the header to switch themes
-- **Persistent**: Your theme preference is saved and remembered across sessions
+Associate Consultant @ **Oracle Financial Software Services**  
+Working with Java, Spring Boot, Angular, and FinTech solutions
 
-### Theme Colors
+## 🎓 Education
 
-**Light Theme:**
-- Background: #f5f7fa
-- Text: #2c3e50
-- Accent: #0073e6
+B.Tech in Computer Science | SR University | CGPA: 8.2/10
 
-**Dark Theme:**
-- Background: #1a1a2e
-- Text: #e0e0e0
-- Accent: #00d4ff
+---
 
-## 📧 Contact
+## 🔗 Connect
 
-- **Email**: vanipentabhanuprakashreddy@gmail.com
-- **Phone**: +91-8904764539
-- **LinkedIn**: [Profile](https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/)
-- **GitHub**: [Bhanu0301](https://github.com/Bhanu0301)
-- **LeetCode**: [bhanreddy0301](https://leetcode.com/bhanreddy0301/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/bhanreddy0301/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=github&logoColor=white)](https://bhanu0301.github.io)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vanipentabhanuprakashreddy@gmail.com)
 
-## 📝 License
+---
 
-This portfolio is personal work. Please feel free to view and take inspiration, but do not copy the design or content without permission.
+⭐ Feel free to explore my projects and connect with me!
 
-## 🔗 Links
-
-- **Live Portfolio**: (Add your deployment link here)
-- **Contact Page**: [contact.html](contact.html)
 - Mobile-optimized design
 - Back navigation to portfolio
 
