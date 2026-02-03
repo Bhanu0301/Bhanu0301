@@ -1,6 +1,6 @@
 # Hi 👋, I'm Bhanuprakash Reddy
 
-**Software Engineer** | FinTech | Full-Stack Developer | Hyderabad, India
+**Software Engineer** | FinTech | Full-Stack Developer | Bengaluru, India
 
 ---
 
@@ -57,7 +57,7 @@ Working with Java, Spring Boot, Angular, and FinTech solutions
 
 ## 🎓 Education
 
-B.Tech in Computer Science | SR University | CGPA: 8.2/10
+B.Tech in Computer Science |CMR Institute of Technology | CGPA: 9.2/10
 
 ---
 
@@ -71,63 +71,6 @@ B.Tech in Computer Science | SR University | CGPA: 8.2/10
 ---
 
 ⭐ Feel free to explore my projects and connect with me!
-
-- Mobile-optimized design
-- Back navigation to portfolio
-
-## Styling Highlights
-
-- **Smooth Scrolling**: Enhanced user experience with smooth scroll behavior
-- **Hover Effects**: Interactive elements respond to user interaction
-- **Gradient Backgrounds**: Modern gradient design throughout
-- **Box Shadows**: Subtle shadows for depth and dimensionality
-- **Responsive Typography**: Font sizes scale appropriately for all devices
-- **Smooth Transitions**: CSS transitions for polished interactions
-
-## Browser Compatibility
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Responsive Design Breakpoints
-
-- **Desktop**: 1920px and above
-- **Tablet**: 769px - 1024px
-- **Mobile**: Below 768px
-
-## How to Use
-
-1. Open `index.html` in a web browser to view the main portfolio
-2. Navigate to the contact page using the footer link
-3. Click on project links to view GitHub repositories
-4. Use social links to connect on professional platforms
-
-## Improvements Made
-
-✅ Enhanced visual design with modern CSS
-✅ Better content organization and hierarchy
-✅ Detailed project descriptions with technologies
-✅ Professional achievement showcase
-✅ Comprehensive skills categorization
-✅ Dedicated contact page with form
-✅ Mobile-responsive design
-✅ Improved accessibility and UX
-✅ Added hover effects and animations
-✅ Better typography and spacing
-
-## Future Enhancements
-
-- [ ] Add dark mode toggle
-- [ ] Implement actual backend for contact form (currently uses mailto)
-- [ ] Add blog section for technical articles
-- [ ] Include testimonials/recommendations section
-- [ ] Add animated skill bars
-- [ ] Implement project filtering/search
-- [ ] Add certifications section
-- [ ] Performance optimization with lazy loading
 
 ## Contact
 
