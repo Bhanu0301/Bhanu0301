@@ -34,19 +34,29 @@
 
 ---
 
-## 📊 GitHub & LeetCode Stats
+## 📊 Stats
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bhanu0301&show_icons=true&theme=dark&count_private=true&hide_border=true&bg_color=0d1117" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanu0301&theme=dark&hide_border=true&background=0d1117" alt="GitHub Streak" width="48%">
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bhanu0301&layout=compact&theme=dark&hide_border=true&bg_color=0d1117" alt="Top Languages" width="50%">
-</div>
-
-### 🎯 LeetCode Stats
-![LeetCode Stats](https://leetcard.jacoblin.cool/bhanreddy0301?theme=dark&font=Raleway&ext=heatmap)
+<table align="center">
+  <tr>
+    <td colspan="2">
+      <a href="https://github.com/Bhanu0301">
+        <img src="https://github-readme-stats.vercel.app/api?username=Bhanu0301&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Bhanu0301">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bhanu0301&theme=dark" alt="GitHub Streak" />
+      </a>
+    </td>
+    <td>
+      <a href="https://leetcode.com/bhanreddy0301/">
+        <img src="https://leetcard.jacoblin.cool/bhanreddy0301?theme=dark&font=Raleway" alt="LeetCode Stats" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
