@@ -1,21 +1,407 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <h2>Contact Me</h2>
+    <title>Contact Me - Bhanuprakash Reddy</title>
+    <style>
+        :root {
+          /* Light Theme Colors */
+          --bg-primary: #f5f7fa;
+          --bg-secondary: #ffffff;
+          --bg-tertiary: #eef4ff;
+          --text-primary: #2c3e50;
+          --text-secondary: #555;
+          --text-tertiary: #666;
+          --accent-primary: #0073e6;
+          --accent-secondary: #4a90e2;
+          --accent-gold: #ffc107;
+          --border-color: #e0e7ff;
+          --shadow-color: rgba(0, 115, 230, 0.15);
+          --shadow-light: rgba(0, 0, 0, 0.08);
+          --header-bg: linear-gradient(135deg, #0073e6 0%, #4a90e2 100%);
+          --footer-bg: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
+        }
+
+        body.dark-theme {
+          /* Dark Theme Colors */
+          --bg-primary: #1a1a2e;
+          --bg-secondary: #16213e;
+          --bg-tertiary: #0f3460;
+          --text-primary: #e0e0e0;
+          --text-secondary: #b0b0b0;
+          --text-tertiary: #999;
+          --accent-primary: #00d4ff;
+          --accent-secondary: #00a8cc;
+          --accent-gold: #ffd700;
+          --border-color: #2a2a4e;
+          --shadow-color: rgba(0, 212, 255, 0.1);
+          --shadow-light: rgba(0, 0, 0, 0.3);
+          --header-bg: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+          --footer-bg: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: var(--header-bg);
+            color: white;
+            padding: 2rem 8%;
+            text-align: center;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .theme-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.6rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 2.5rem auto;
+            padding: 0 20px;
+        }
+
+        .contact-wrapper {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #0073e6;
+        }
+
+        .contact-wrapper h2 {
+            color: #0073e6;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 0.8rem;
+        }
+
+        .contact-intro {
+            color: #555;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-method {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            border-color: #0073e6;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 115, 230, 0.15);
+        }
+
+        .contact-method .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-method h3 {
+            color: #1a3a52;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .contact-method a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+            color: #005bb3;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            color: #1a3a52;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 0.9rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(0, 115, 230, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        input[type="submit"] {
+            padding: 1rem 1.5rem;
+            background: var(--header-bg);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-color);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--footer-bg);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 2px solid var(--accent-primary);
+            margin-top: 3rem;
+        }
+
+        .form-note {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 6px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 1.5rem 5%;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .theme-toggle {
+                position: static;
+                margin-bottom: 1rem;
+            }
+
+            .container {
+                margin: 1.5rem auto;
+            }
+
+            .contact-wrapper {
+                padding: 1.5rem;
+            }
+
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <form class="" action="mailto:bhanu0301reddy@gmail.com" method="post" enctype="text/plain">
-        <label>Your Name:</label>
-        <input type="text" name="" value="">
-        <br>
-        <label>Your Email:</label>
-        <input type="email" name="" value=""><br>
-        <label>Your Message:</label><br>
-        <textarea name = "name" rows="8" cols = "88"></textarea><br>
-        <input type="submit" name="" value="Submit">
-    </form>
+    <header>
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>
+        <div class="back-link">
+            <a href="index.html">← Back to Portfolio</a>
+        </div>
+        <h1>Get In Touch</h1>
+        <p>Let's connect and discuss opportunities or collaborations!</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-wrapper">
+            <h2>Contact Information</h2>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:vanipentabhanuprakashreddy@gmail.com">vanipentabhanuprakashreddy@gmail.com</a>
+                </div>
+                <div class="contact-method">
+                    <div class="icon">📞</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+918904764539">+91-8904764539</a>
+                </div>
+                <div class="contact-method">
+                    <div class="icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/" target="_blank">Connect with me</a>
+                </div>
+            </div>
+
+            <p class="contact-intro">Feel free to reach out via any of the methods above, or use the form below to send me a message directly!</p>
+
+            <h2 style="margin-top: 2.5rem;">Send a Message</h2>
+            <form action="mailto:vanipentabhanuprakashreddy@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+            <div class="form-note">
+                💡 <strong>Note:</strong> This will open your default email client. Alternatively, you can email me directly using the contact information above.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Vanipenta Bhanuprakash Reddy | All rights reserved
+    </footer>
+
+    <script>
+      // Theme Toggle Functionality
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+
+      // Check for saved theme preference or default to light
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      
+      // Check system preference if no saved preference
+      if (!localStorage.getItem('theme')) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDark) {
+          body.classList.add('dark-theme');
+          themeToggle.textContent = '☀️';
+        }
+      } else if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeToggle.textContent = '☀️';
+      }
+
+      // Toggle theme on button click
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        
+        const isDarkTheme = body.classList.contains('dark-theme');
+        themeToggle.textContent = isDarkTheme ? '☀️' : '🌙';
+        localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+      });
+
+      // Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          if (e.matches) {
+            body.classList.add('dark-theme');
+            themeToggle.textContent = '☀️';
+          } else {
+            body.classList.remove('dark-theme');
+            themeToggle.textContent = '🌙';
+          }
+        }
+      });
+    </script>
 </body>
 </html>

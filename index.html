@@ -3,18 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhanuprakash Reddy | Portfolio</title>
+  <title>Bhanuprakash Reddy | Software Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of Bhanuprakash Reddy, Software Engineer specializing in Java, Spring Boot, Angular, and FinTech applications.">
 
   <style>
+    :root {
+      /* Light Theme Colors */
+      --bg-primary: #f5f7fa;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #eef4ff;
+      --text-primary: #2c3e50;
+      --text-secondary: #555;
+      --text-tertiary: #666;
+      --accent-primary: #0073e6;
+      --accent-secondary: #4a90e2;
+      --accent-gold: #ffc107;
+      --border-color: #e0e7ff;
+      --shadow-color: rgba(0, 115, 230, 0.15);
+      --shadow-light: rgba(0, 0, 0, 0.08);
+      --header-bg: linear-gradient(135deg, #0073e6 0%, #4a90e2 100%);
+      --skill-bg: linear-gradient(135deg, #eef4ff 0%, #f0f8ff 100%);
+      --footer-bg: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);
+    }
+
+    body.dark-theme {
+      /* Dark Theme Colors */
+      --bg-primary: #1a1a2e;
+      --bg-secondary: #16213e;
+      --bg-tertiary: #0f3460;
+      --text-primary: #e0e0e0;
+      --text-secondary: #b0b0b0;
+      --text-tertiary: #999;
+      --accent-primary: #00d4ff;
+      --accent-secondary: #00a8cc;
+      --accent-gold: #ffd700;
+      --border-color: #2a2a4e;
+      --shadow-color: rgba(0, 212, 255, 0.1);
+      --shadow-light: rgba(0, 0, 0, 0.3);
+      --header-bg: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+      --skill-bg: linear-gradient(135deg, #0f3460 0%, #153a7e 100%);
+      --footer-bg: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    }
+
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9fafc;
-      color: #222;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -22,98 +62,244 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #0073e6, #4a90e2);
+      background: var(--header-bg);
       color: white;
-      padding: 2rem 8%;
+      padding: 3rem 8%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      box-shadow: 0 4px 20px var(--shadow-color);
+      position: relative;
+    }
+
+    .theme-toggle {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+    }
+
+    .theme-toggle:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: scale(1.1);
     }
 
     header img {
       border-radius: 50%;
-      height: 120px;
-      width: 120px;
+      height: 140px;
+      width: 140px;
       object-fit: cover;
-      border: 3px solid #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      border: 4px solid #fff;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+      flex-shrink: 0;
     }
 
     header .info {
       flex: 1;
       min-width: 260px;
-      margin-left: 2rem;
+      margin-left: 2.5rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
     }
 
-    header p {
-      margin: .4rem 0;
+    header .title {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
       font-weight: 500;
+      opacity: 0.95;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      font-size: 0.95rem;
     }
 
     .contact a {
       color: #fff;
-      text-decoration: underline;
-      margin: 0 0.3rem;
+      text-decoration: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
       font-weight: 500;
+    }
+
+    .contact a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
     }
 
     /* Sections */
     section {
-      margin: 2rem 8%;
-      background: #fff;
-      padding: 1.5rem 2rem;
+      margin: 2.5rem 8%;
+      background: var(--bg-secondary);
+      padding: 2rem 2.5rem;
       border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 12px var(--shadow-light);
+      border-top: 4px solid var(--accent-primary);
     }
 
     h2 {
-      color: #0073e6;
-      border-bottom: 2px solid #0073e6;
-      padding-bottom: .3rem;
+      color: var(--accent-primary);
+      border-bottom: 3px solid var(--accent-primary);
+      padding-bottom: 0.8rem;
+      margin-top: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: var(--text-primary);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    h3:first-of-type {
       margin-top: 0;
     }
 
+    .position-title {
+      color: var(--accent-primary);
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0.3rem 0 1rem 0;
+    }
+
+    .meta {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
     ul {
-      line-height: 1.7;
-      padding-left: 1.2rem;
+      line-height: 1.8;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
     }
 
     a {
-      color: #0073e6;
+      color: var(--accent-primary);
       text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     a:hover {
+      color: var(--accent-secondary);
       text-decoration: underline;
+    }
+
+    /* Project Cards */
+    .project-item {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .project-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0.5rem 0;
+    }
+
+    .project-tech {
+      color: var(--accent-primary);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
     }
 
     /* Skills Grid */
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
     }
 
-    .skills-grid div {
-      background: #eef4ff;
-      padding: 0.9rem 1rem;
+    .skill-category {
+      background: var(--skill-bg);
+      padding: 1.2rem 1.5rem;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-primary);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-category:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px var(--shadow-color);
+    }
+
+    .skill-category b {
+      color: var(--accent-primary);
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .skill-category span {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    /* Achievement Badges */
+    .achievements-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .achievement-item {
+      background: var(--bg-secondary);
+      border: 2px solid var(--accent-gold);
+      padding: 1.2rem;
       border-radius: 8px;
+      box-shadow: 0 2px 8px var(--shadow-light);
+    }
+
+    .achievement-item::before {
+      content: "🏆 ";
+      font-size: 1.3rem;
+      margin-right: 0.5rem;
     }
 
     footer {
       text-align: center;
-      padding: 1rem;
-      background: #f0f4f8;
-      color: #555;
+      padding: 2rem 1rem;
+      background: var(--footer-bg);
+      color: var(--text-secondary);
       font-size: 0.9rem;
-      margin-top: 2rem;
+      margin-top: 3rem;
+      border-top: 2px solid var(--accent-primary);
     }
 
     /* Responsive */
@@ -121,15 +307,48 @@
       header {
         flex-direction: column;
         text-align: center;
+        padding: 2rem 5%;
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
       }
 
       header .info {
         margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      header img {
+        height: 120px;
+        width: 120px;
+      }
+
+      .theme-toggle {
+        position: static;
+        margin-bottom: 1rem;
+      }
+
+      .contact {
+        justify-content: center;
       }
 
       section {
-        margin: 1.2rem 5%;
+        margin: 1.5rem 5%;
+        padding: 1.5rem 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .achievements-list {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -137,18 +356,17 @@
 
 <body>
 
-<header>
-  <img src="img/bhanu-modified.png" alt="Bhanuprakash Reddy">
+<header>  <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>  <img src="img/bhanu-modified.png" alt="Bhanuprakash Reddy">
   <div class="info">
     <h1>VANIPENTA BHANUPRAKASH REDDY</h1>
-    <p>Associate Consultant @ Oracle Financial Software Services</p>
+    <div class="title">Software Engineer | Java | Spring Boot | Angular | FinTech</div>
     <div class="contact">
-      📞 +91-8904764539 |
-      ✉️ <a href="mailto:vanipentabhanuprakashreddy@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/">LinkedIn</a> |
-      <a href="https://github.com/Bhanu0301">GitHub</a> |
-      <a href="https://leetcode.com/bhanreddy0301/">LeetCode</a> |
-      <a href="https://drive.google.com/file/d/1J2xajl6Syx08jBBInAmtS-udvmKvFfwZ/view">Resume</a>
+      <a href="tel:+918904764539">📞 +91-8904764539</a>
+      <a href="mailto:vanipentabhanuprakashreddy@gmail.com">✉️ Email</a>
+      <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/Bhanu0301" target="_blank">💻 GitHub</a>
+      <a href="https://leetcode.com/bhanreddy0301/" target="_blank">⚡ LeetCode</a>
+      <a href="https://drive.google.com/file/d/1qZ0Q_PT4djNMYT2kRPQsNVsXkAShV4sZ/view?usp=sharing" target="_blank">📄 Resume</a>
     </div>
   </div>
 </header>
@@ -156,96 +374,209 @@
 <section>
   <h2>About Me</h2>
   <p>
-    Software Engineer with strong experience in
-    <strong>Java, Spring Boot, Angular, and FinTech application development</strong>.
-    Currently working as an <strong>Associate Consultant at Oracle Financial Software Services</strong>,
-    contributing to large-scale <strong>ISO 20022 (MT–MX) payment message translation platforms</strong>.
-    Skilled in building secure, scalable systems with maker–checker workflows,
-    audit trails, and high-throughput REST APIs.
+    I'm a <strong>Software Engineer</strong> with hands-on experience building secure, scalable backend systems and interactive user interfaces. Currently working as an <strong>Associate Consultant at Oracle Financial Software Services</strong>, where I contribute to mission-critical <strong>ISO 20022 payment message translation platforms</strong> used by the banking industry.
+  </p>
+  <p>
+    My expertise spans <strong>Java, Spring Boot, Angular, and FinTech application development</strong>. I specialize in designing high-performance REST APIs, optimizing database operations, implementing security controls (maker–checker workflows, audit trails), and collaborating with cross-functional teams to deliver production-grade solutions.
+  </p>
+  <p>
+    When not coding, I enjoy solving algorithmic challenges on <strong>LeetCode</strong> and contributing to open-source projects. I'm passionate about writing clean, maintainable code and continuously improving my skills.
   </p>
 </section>
 
 <section>
-  <h2>Experience</h2>
+  <h2>Professional Experience</h2>
 
-  <h3>Oracle Financial Software Services Pvt. Ltd. (Aug 2024 – Present)</h3>
-  <p><strong>Associate Consultant — Java, Spring Boot, Angular, SQL | Bangalore, India</strong></p>
+  <h3>Oracle Financial Software Services Pvt. Ltd.</h3>
+  <div class="position-title">Associate Consultant — Java, Spring Boot, Angular, SQL</div>
+  <div class="meta">📍 Bangalore, India | Aug 2024 – Present</div>
   <ul>
-    <li>Developed Angular UI components for routing rules, message queues, channel configurations, and dashboards.</li>
-    <li>Designed and implemented RESTful backend services using Java, Spring Boot, and Spring Data JPA for ISO 20022 translation.</li>
-    <li>Optimized SQL queries, indexing, pagination, and transaction workflows to reduce latency and improve throughput.</li>
-    <li>Implemented maker–checker authorization, audit trail logging, and compliance-driven validations.</li>
-    <li>Collaborated with operations teams on deployments, monitoring, and incident resolution.</li>
+    <li>
+      <strong>Built and enhanced Angular-based operational dashboards</strong> used by internal banking operations teams to configure routing rules, MQ connections, and channel settings, reducing manual configuration errors and turnaround time.
+    </li>
+    <li>
+      <strong>Designed and implemented backend REST APIs</strong> using Java, Spring Boot, and Spring Data JPA to support ISO 20022 (MT–MX) message translation and routing across distributed systems.
+    </li>
+    <li>
+      <strong>Improved backend performance</strong> by optimizing SQL queries, indexing strategies, pagination logic, and transaction handling, resulting in faster API responses and improved throughput under load.
+    </li>
+    <li>
+      <strong>Implemented maker–checker (four-eye) authorization and audit logging</strong> to enforce controlled configuration changes and ensure traceability for compliance-driven banking operations.
+    </li>
+    <li>
+      Collaborated with operations teams on deployments, monitoring, and incident resolution across production environments.
+    </li>
   </ul>
 
-  <h3>Epsilon India (Jan 2024 – May 2024)</h3>
-  <p><strong>Project Intern — Node.js, Express.js, MongoDB, MailChimp, EJS | India</strong></p>
+  <h3>Epsilon India (MailChimp Partner)</h3>
+  <div class="position-title">Project Intern — Node.js, Express.js, MongoDB, MailChimp</div>
+  <div class="meta">📍 India | Oct 2023 – Jan 2024</div>
   <ul>
-    <li>Developed a custom email marketing platform for Reliance Digital enabling personalized campaigns.</li>
-    <li>Implemented backend services using Node.js, Express.js, and MongoDB.</li>
-    <li>Integrated MailChimp APIs for automated email workflows.</li>
+    <li>
+      Built a <strong>custom email marketing platform for Reliance Digital</strong> to support personalized promotional campaigns based on customer data and preferences.
+    </li>
+    <li>
+      <strong>Integrated MailChimp APIs</strong> to automate bulk email delivery, campaign scheduling, and engagement tracking.
+    </li>
+    <li>
+      Implemented secure link generation and tracking for marketing emails, ensuring reliable redirection and accurate campaign analytics.
+    </li>
   </ul>
 </section>
 
 <section>
   <h2>Projects</h2>
-  <ul>
-    <li>
-      <b><a href="https://github.com/Bhanu0301/MyWallet-Smart-Expense-Tracker">MyWallet: Smart Expense Tracker</a></b>
-      — Spring Boot, React, SQL, JWT, OpenAI API
-      <ul>
-        <li>Built a secure expense tracking platform with JWT authentication and role-based access.</li>
-        <li>Developed dashboards for monthly spending trends and category-wise budgets.</li>
-        <li>Integrated AI-powered expense categorization using OpenAI API.</li>
-      </ul>
-    </li>
 
-    <li>
-      <b><a href="https://github.com/Bhanu0301/Crop-Connect">Crop-Connect: Empowering Farmers Digitally</a></b>
-      — Flutter, Firebase, TensorFlow Lite, IoT Sensors
-      <ul>
-        <li>Digitized agriculture via AI-based disease detection and IoT-driven soil monitoring.</li>
-        <li>Implemented secure authentication, multilingual support, and real-time data storage.</li>
-        <li>Enabled a digital marketplace for agricultural products and tools.</li>
-      </ul>
-    </li>
-  </ul>
+  <div class="project-item">
+    <div class="project-title">🚀 <a href="https://github.com/Bhanu0301/MyWallet-Smart-Expense-Tracker" target="_blank">MyWallet: Smart Expense Tracker</a></div>
+    <div class="project-tech">Spring Boot | React | SQL | JWT | JPA | OpenAI API</div>
+    <ul>
+      <li>Designed and developed a full-stack expense tracking application with <strong>JWT-based authentication and role-based access control</strong> for users and administrators.</li>
+      <li>Built interactive <strong>React dashboards</strong> to visualize monthly spending trends, category-wise breakdowns, and budget utilization using charts and analytics.</li>
+      <li>Implemented an <strong>admin management module</strong> for user and category configuration, enabling controlled data management and system extensibility.</li>
+      <li>Integrated <strong>AI-driven expense categorization</strong> using the OpenAI API, reducing manual classification effort and improving accuracy of expense insights.</li>
+      <li><strong>Tech Stack:</strong> Spring Boot backend with Spring Security, React frontend, MySQL database, JWT tokens for secure API calls.</li>
+    </ul>
+  </div>
+
+  <div class="project-item">
+    <div class="project-title">🚜 <a href="https://github.com/Bhanu0301/Crop-Connect" target="_blank">Crop-Connect: Empowering Farmers Digitally</a></div>
+    <div class="project-tech">Flutter | Firebase | TensorFlow Lite | IoT Sensors</div>
+    <ul>
+      <li>Digitized agriculture through <strong>AI-based disease detection</strong> and <strong>IoT-driven soil monitoring</strong> for precision farming.</li>
+      <li>Implemented <strong>secure authentication, multilingual support</strong>, and <strong>real-time data storage</strong> using Firebase for scalability.</li>
+      <li>Enabled a <strong>digital marketplace</strong> for agricultural products and tools, connecting farmers directly to buyers.</li>
+      <li><strong>Impact:</strong> Helped rural farmers adopt modern agricultural practices with technology-driven insights.</li>
+    </ul>
+  </div>
+
+  <div class="project-item">
+    <div class="project-title">📧 Email Marketing Platform</div>
+    <div class="project-tech">Node.js | Express.js | MongoDB | MailChimp API | EJS</div>
+    <ul>
+      <li>Built a custom email marketing platform for <strong>Reliance Digital</strong> to support <strong>personalized promotional campaigns</strong> based on customer data and preferences.</li>
+      <li>Integrated <strong>MailChimp APIs</strong> to automate bulk email delivery, campaign scheduling, and engagement tracking.</li>
+      <li>Implemented <strong>secure link generation and tracking</strong> for marketing emails, ensuring reliable redirection and accurate campaign analytics.</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h2>Technical Skills</h2>
   <div class="skills-grid">
-    <div><b>Languages:</b> Java, SQL</div>
-    <div><b>Backend:</b> Spring Boot, Spring Data JPA, REST APIs</div>
-    <div><b>Frontend:</b> Angular, React, HTML, CSS</div>
-    <div><b>Databases:</b> Oracle DB, MySQL, MongoDB</div>
-    <div><b>Messaging:</b> IBM MQ, Apache Kafka</div>
-    <div><b>Tools:</b> Git, GitHub, Postman, Citrix, WebSphere</div>
-    <div><b>Core:</b> DSA, Low-Level Design, Microservices</div>
+    <div class="skill-category">
+      <b>Programming Languages</b>
+      <span>Java, SQL, Node.js, JavaScript</span>
+    </div>
+    <div class="skill-category">
+      <b>Backend & Frameworks</b>
+      <span>Spring Boot, Spring Security, Spring Data JPA, Express.js</span>
+    </div>
+    <div class="skill-category">
+      <b>Frontend</b>
+      <span>Angular, React, HTML5, CSS3, TypeScript</span>
+    </div>
+    <div class="skill-category">
+      <b>Databases</b>
+      <span>Oracle Database, MySQL, MongoDB</span>
+    </div>
+    <div class="skill-category">
+      <b>Messaging & Integration</b>
+      <span>Apache Kafka, IBM MQ, REST APIs, MailChimp</span>
+    </div>
+    <div class="skill-category">
+      <b>Security & Architecture</b>
+      <span>JWT Authentication, OAuth2, Spring Security, Microservices</span>
+    </div>
+    <div class="skill-category">
+      <b>Dev Tools & Platforms</b>
+      <span>Git, GitHub, Postman, Citrix, IBM WebSphere, Firebase</span>
+    </div>
+    <div class="skill-category">
+      <b>Core Competencies</b>
+      <span>Data Structures & Algorithms, System Design, Low-Level Design, Clean Code</span>
+    </div>
   </div>
 </section>
 
 <section>
-  <h2>Achievements</h2>
-  <ul>
-    <li>🏆 Oracle Team Award (FY26 Q1) for ISO 20022 standardization – GIB project.</li>
-    <li>⚡ Oracle Spark Pacesetter Award (FY25) for GIB Translator contributions.</li>
-    <li>🧠 LeetCode Contest Rating: 1633.</li>
-  </ul>
+  <h2>Achievements & Awards</h2>
+  <div class="achievements-list">
+    <div class="achievement-item">
+      <strong>Oracle Team Award (FY26 Q1)</strong><br>
+      For contributing to ISO 20022 standardization of the GIB (Global International Banking) platform under tight delivery timelines. Recognized for technical excellence and teamwork.
+    </div>
+    <div class="achievement-item">
+      <strong>Oracle Spark Pacesetter Award (FY25)</strong><br>
+      For impactful contributions to the GIB Translator project and critical SNB (Straight-Through-Banking) production support, demonstrating leadership and problem-solving skills.
+    </div>
+    <div class="achievement-item">
+      <strong>LeetCode Challenge Rating: 1633</strong><br>
+      Active competitive programmer with strong problem-solving skills. Regularly participate in contests and solve algorithmic challenges.
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>Education</h2>
+  <h3>CMR Institute of Technology</h3>
+  <div class="position-title">Bachelor of Engineering (B.E.) in Information Science and Engineering</div>
+  <div class="meta">📍 Bangalore, India | July 2020 – June 2024</div>
   <p>
-    <b>CMR Institute of Technology</b> (July 2020 – June 2024)<br>
-    B.E. in Information Science and Engineering |
-    <b>CGPA: 9.20</b>
+    <strong>CGPA: 9.20/10</strong> — Consistently achieved excellent academic performance throughout the program.
+    Actively participated in hackathons, coding competitions, and technical clubs. Developed strong foundational knowledge in
+    computer science fundamentals, system design, and software engineering best practices.
   </p>
 </section>
 
 <footer>
-  © 2025 Vanipenta Bhanuprakash Reddy
+  <p>© 2025 Vanipenta Bhanuprakash Reddy | All rights reserved</p>
+  <p><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">📧 Get In Touch</a></p>
 </footer>
+
+<script>
+  // Theme Toggle Functionality
+  const themeToggle = document.getElementById('themeToggle');
+  const htmlElement = document.documentElement;
+  const body = document.body;
+
+  // Check for saved theme preference or default to light
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  
+  // Check system preference if no saved preference
+  if (!localStorage.getItem('theme')) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      body.classList.add('dark-theme');
+      themeToggle.textContent = '☀️';
+    }
+  } else if (currentTheme === 'dark') {
+    body.classList.add('dark-theme');
+    themeToggle.textContent = '☀️';
+  }
+
+  // Toggle theme on button click
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-theme');
+    
+    const isDarkTheme = body.classList.contains('dark-theme');
+    themeToggle.textContent = isDarkTheme ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+  });
+
+  // Listen for system theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      if (e.matches) {
+        body.classList.add('dark-theme');
+        themeToggle.textContent = '☀️';
+      } else {
+        body.classList.remove('dark-theme');
+        themeToggle.textContent = '🌙';
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
