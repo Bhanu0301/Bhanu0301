@@ -1,6 +1,6 @@
 # Hi 👋, I'm Bhanuprakash Reddy
 
-**Software Engineer** | FinTech | Full-Stack Developer | Bengaluru, India
+**Software Engineer** | Java Full-Stack Developer | Bengaluru, India
 
 ---
 
