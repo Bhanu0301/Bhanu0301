@@ -42,4 +42,4 @@ Other projects include [MyWallet](https://github.com/Bhanu0301/MyWallet-Smart-Ex
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/) · [GitHub](https://github.com/Bhanu0301) · [LeetCode](https://leetcode.com/bhanreddy0301/) · [Portfolio](https://bhanu0301.github.io/Bhanu0301) · [Email](mailto:vanipentabhanuprakashreddy@gmail.com) · [+91-8904764539](tel:+918904764539)
+[LinkedIn](https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy/) · [GitHub](https://github.com/Bhanu0301) · [LeetCode](https://leetcode.com/bhanu0301/) · [Portfolio](https://bhanu0301.github.io/Bhanu0301) · [Email](mailto:vanipentabhanuprakashreddy@gmail.com) · [+91-8904764539](tel:+918904764539)
