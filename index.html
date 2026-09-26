@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bhanuprakash Reddy | Software Engineer | Portfolio</title>
-  <meta name="description" content="Portfolio of Bhanuprakash Reddy, Software Engineer specializing in Java, Spring Boot, Angular, and FinTech applications.">
+  <meta name="description" content="Vanipenta Bhanuprakash Reddy is a software engineer building event-driven retail data systems, financial software, and healthcare microservices.">
 
   <style>
     :root {
@@ -223,6 +223,38 @@
       padding-bottom: 0;
     }
 
+    .experience-entry {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .experience-entry:first-of-type {
+      padding-top: 0;
+    }
+
+    .experience-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .experience-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
+    }
+
+    .experience-heading h3 {
+      margin-bottom: 0;
+    }
+
+    .experience-date {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
     .project-title {
       font-size: 1.2rem;
       font-weight: 600;
@@ -356,17 +388,17 @@
 
 <body>
 
-<header>  <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button>  <img src="img/bhanu-modified.png" alt="Bhanuprakash Reddy">
+<header>  <button class="theme-toggle" id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>  <img src="img/bhanu-modified.png" alt="Vanipenta Bhanuprakash Reddy">
   <div class="info">
     <h1>VANIPENTA BHANUPRAKASH REDDY</h1>
-    <div class="title">Software Engineer | Java | Spring Boot | Angular | FinTech</div>
+    <div class="title">Software Engineer | Event-Driven Systems | Retail Technology | FinTech</div>
     <div class="contact">
       <a href="tel:+918904764539">📞 +91-8904764539</a>
       <a href="mailto:vanipentabhanuprakashreddy@gmail.com">✉️ Email</a>
-      <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy-726a38204/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/Bhanu0301" target="_blank">💻 GitHub</a>
-      <a href="https://leetcode.com/bhanreddy0301/" target="_blank">⚡ LeetCode</a>
-      <a href="https://drive.google.com/file/d/1qZ0Q_PT4djNMYT2kRPQsNVsXkAShV4sZ/view?usp=sharing" target="_blank">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/vanipenta-bhanuprakash-reddy/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      <a href="https://github.com/Bhanu0301" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+      <a href="https://leetcode.com/bhanu0301/" target="_blank" rel="noopener noreferrer">⚡ LeetCode</a>
+      <a href="contact.html">✉ Contact</a>
     </div>
   </div>
 </header>
@@ -374,61 +406,76 @@
 <section>
   <h2>About Me</h2>
   <p>
-    I'm a <strong>Software Engineer</strong> with hands-on experience building secure, scalable backend systems and interactive user interfaces. Currently working as an <strong>Associate Consultant at Oracle Financial Software Services</strong>, where I contribute to mission-critical <strong>ISO 20022 payment message translation platforms</strong> used by the banking industry.
+    I'm a <strong>Software Engineer at Albertsons Companies India</strong>, building event-driven services that turn retail product data into reliable, customer-ready content. My work spans CSP integrations, GDSN item onboarding, and resilient microservices.
   </p>
   <p>
-    My expertise spans <strong>Java, Spring Boot, Angular, and FinTech application development</strong>. I specialize in designing high-performance REST APIs, optimizing database operations, implementing security controls (maker–checker workflows, audit trails), and collaborating with cross-functional teams to deliver production-grade solutions.
+    Previously, I worked at <strong>Oracle Financial Software Services</strong> on a SWIFT ISO 20022 message translation platform for Gulf International Bank. I build with Java, Spring Boot, Kafka, SQL, and modern frontend frameworks, with a focus on secure, observable systems.
   </p>
   <p>
-    When not coding, I enjoy solving algorithmic challenges on <strong>LeetCode</strong> and contributing to open-source projects. I'm passionate about writing clean, maintainable code and continuously improving my skills.
+    Outside of work, I'm developing a healthcare microservices platform and exploring event-driven architecture, observability, and dependable service design.
   </p>
 </section>
 
 <section>
   <h2>Professional Experience</h2>
 
-  <h3>Oracle Financial Software Services Pvt. Ltd.</h3>
-  <div class="position-title">Associate Consultant — Java, Spring Boot, Angular, SQL</div>
-  <div class="meta">📍 Bangalore, India | Aug 2024 – Present</div>
-  <ul>
-    <li>
-      <strong>Built and enhanced Angular-based operational dashboards</strong> used by internal banking operations teams to configure routing rules, MQ connections, and channel settings, reducing manual configuration errors and turnaround time.
-    </li>
-    <li>
-      <strong>Designed and implemented backend REST APIs</strong> using Java, Spring Boot, and Spring Data JPA to support ISO 20022 (MT–MX) message translation and routing across distributed systems.
-    </li>
-    <li>
-      <strong>Improved backend performance</strong> by optimizing SQL queries, indexing strategies, pagination logic, and transaction handling, resulting in faster API responses and improved throughput under load.
-    </li>
-    <li>
-      <strong>Implemented maker–checker (four-eye) authorization and audit logging</strong> to enforce controlled configuration changes and ensure traceability for compliance-driven banking operations.
-    </li>
-    <li>
-      Collaborated with operations teams on deployments, monitoring, and incident resolution across production environments.
-    </li>
-  </ul>
+  <div class="experience-entry">
+    <div class="experience-heading">
+      <h3>Albertsons Companies India</h3>
+      <span class="experience-date">Apr 2026 – Present</span>
+    </div>
+    <div class="position-title">Software Engineer — Event-Driven Microservices, Retail Data</div>
+    <ul>
+      <li>Engineered event-driven microservices that transform raw product data from retail Content Service Providers (CSPs) into enriched, customer-ready outputs, with reliable integration across enterprise systems.</li>
+      <li>Designed GDSN Display Shipper item onboarding, enriching display trade items with complete hierarchical taxonomy and automating complex retail display configurations.</li>
+      <li>Developed category-level CSP precedence, allowing vendors to prioritize preferred data providers and improving the quality and reliability of customer-facing product content.</li>
+      <li>Participated in disaster recovery drills across microservices, validating recovery, service dependencies, and application resiliency.</li>
+    </ul>
+  </div>
 
-  <h3>Epsilon India (MailChimp Partner)</h3>
-  <div class="position-title">Project Intern — Node.js, Express.js, MongoDB, MailChimp</div>
-  <div class="meta">📍 India | Oct 2023 – Jan 2024</div>
-  <ul>
-    <li>
-      Built a <strong>custom email marketing platform for Reliance Digital</strong> to support personalized promotional campaigns based on customer data and preferences.
-    </li>
-    <li>
-      <strong>Integrated MailChimp APIs</strong> to automate bulk email delivery, campaign scheduling, and engagement tracking.
-    </li>
-    <li>
-      Implemented secure link generation and tracking for marketing emails, ensuring reliable redirection and accurate campaign analytics.
-    </li>
-  </ul>
+  <div class="experience-entry">
+    <div class="experience-heading">
+      <h3>Oracle Financial Software Services</h3>
+      <span class="experience-date">Aug 2024 – Apr 2026</span>
+    </div>
+    <div class="position-title">Associate Consultant — Java, Spring Boot, Angular</div>
+    <ul>
+      <li>Contributed to a message translator platform for Gulf International Bank, enabling MT–MX interoperability for the SWIFT ISO 20022 migration and supporting a compliant transition ahead of deadlines.</li>
+      <li>Built dynamic Angular components integrated with Spring Boot REST services and Oracle Database persistence for enterprise financial workflows.</li>
+      <li>Implemented database and LDAP authentication with role-based access control, enforcing fine-grained authorization for payment applications.</li>
+      <li>Built a four-eye maker–checker approval workflow for configuration changes and comprehensive audit logging to support governance, traceability, and compliance.</li>
+    </ul>
+  </div>
+
+  <div class="experience-entry">
+    <div class="experience-heading">
+      <h3>Epsilon India (Mailchimp Partner)</h3>
+      <span class="experience-date">Oct 2023 – Jan 2024</span>
+    </div>
+    <div class="position-title">Project Intern — Node.js, Express.js, MongoDB</div>
+    <ul>
+      <li>Built a personalized email marketing platform for Reliance Digital and integrated Mailchimp APIs for campaign delivery and engagement tracking.</li>
+      <li>Implemented secure campaign link generation and tracking for reliable redirection and analytics.</li>
+    </ul>
+  </div>
 </section>
 
 <section>
   <h2>Projects</h2>
 
   <div class="project-item">
-    <div class="project-title">🚀 <a href="https://github.com/Bhanu0301/MyWallet-Smart-Expense-Tracker" target="_blank">MyWallet: Smart Expense Tracker</a></div>
+    <div class="project-title">Healthcare Microservices System</div>
+    <div class="project-tech">Spring Boot | React | MongoDB | Apache Kafka | Docker | Prometheus | Grafana</div>
+    <ul>
+      <li>Engineered a modular healthcare platform with JWT authentication, role-based access control, and resilient API Gateway routing.</li>
+      <li>Designed event-driven appointment workflows with Kafka and real-time email notifications through Mailpit SMTP.</li>
+      <li>Configured Spring Boot Admin and OpenTelemetry, exporting metrics, logs, and traces to Prometheus, Grafana, Loki, Tempo, Jaeger, and Zipkin.</li>
+      <li>Built a React interface for patient, doctor, and administrator workflows, secured through gateway JWT validation and RBAC policies.</li>
+    </ul>
+  </div>
+
+  <div class="project-item">
+    <div class="project-title">🚀 <a href="https://github.com/Bhanu0301/MyWallet-Smart-Expense-Tracker" target="_blank" rel="noopener noreferrer">MyWallet: Smart Expense Tracker</a></div>
     <div class="project-tech">Spring Boot | React | SQL | JWT | JPA | OpenAI API</div>
     <ul>
       <li>Designed and developed a full-stack expense tracking application with <strong>JWT-based authentication and role-based access control</strong> for users and administrators.</li>
@@ -440,7 +487,7 @@
   </div>
 
   <div class="project-item">
-    <div class="project-title">🚜 <a href="https://github.com/Bhanu0301/Crop-Connect" target="_blank">Crop-Connect: Empowering Farmers Digitally</a></div>
+    <div class="project-title">🚜 <a href="https://github.com/Bhanu0301/Crop-Connect" target="_blank" rel="noopener noreferrer">Crop-Connect: Empowering Farmers Digitally</a></div>
     <div class="project-tech">Flutter | Firebase | TensorFlow Lite | IoT Sensors</div>
     <ul>
       <li>Digitized agriculture through <strong>AI-based disease detection</strong> and <strong>IoT-driven soil monitoring</strong> for precision farming.</li>
@@ -466,15 +513,15 @@
   <div class="skills-grid">
     <div class="skill-category">
       <b>Programming Languages</b>
-      <span>Java, SQL, Node.js, JavaScript</span>
+      <span>Java, SQL, TypeScript</span>
     </div>
     <div class="skill-category">
       <b>Backend & Frameworks</b>
-      <span>Spring Boot, Spring Security, Spring Data JPA, Express.js</span>
+      <span>Spring Boot, Spring Security, Microservices Architecture</span>
     </div>
     <div class="skill-category">
       <b>Frontend</b>
-      <span>Angular, React, HTML5, CSS3, TypeScript</span>
+      <span>React, Angular, TypeScript</span>
     </div>
     <div class="skill-category">
       <b>Databases</b>
@@ -482,19 +529,19 @@
     </div>
     <div class="skill-category">
       <b>Messaging & Integration</b>
-      <span>Apache Kafka, IBM MQ, REST APIs, MailChimp</span>
+      <span>Apache Kafka, REST APIs</span>
     </div>
     <div class="skill-category">
       <b>Security & Architecture</b>
-      <span>JWT Authentication, OAuth2, Spring Security, Microservices</span>
+      <span>JWT Authentication, LDAP, RBAC, Spring Security</span>
     </div>
     <div class="skill-category">
       <b>Dev Tools & Platforms</b>
-      <span>Git, GitHub, Postman, Citrix, IBM WebSphere, Firebase</span>
+      <span>Docker, Git, GitHub Actions, Postman, DBeaver</span>
     </div>
     <div class="skill-category">
-      <b>Core Competencies</b>
-      <span>Data Structures & Algorithms, System Design, Low-Level Design, Clean Code</span>
+      <b>Platforms & Observability</b>
+      <span>Azure, Prometheus, Grafana, Spring Boot Admin</span>
     </div>
   </div>
 </section>
@@ -520,17 +567,18 @@
 <section>
   <h2>Education</h2>
   <h3>CMR Institute of Technology</h3>
-  <div class="position-title">Bachelor of Engineering (B.E.) in Information Science and Engineering</div>
-  <div class="meta">📍 Bangalore, India | July 2020 – June 2024</div>
+  <div class="position-title">B.Tech in Information Technology</div>
+  <div class="meta">📍 Bengaluru | Sep 2020 – May 2024</div>
   <p>
-    <strong>CGPA: 9.20/10</strong> — Consistently achieved excellent academic performance throughout the program.
-    Actively participated in hackathons, coding competitions, and technical clubs. Developed strong foundational knowledge in
-    computer science fundamentals, system design, and software engineering best practices.
+    <strong>CGPA: 9.20/10</strong>
   </p>
+  <h3>Kendriya Vidyalaya No. 1 - AFS(W)</h3>
+  <div class="position-title">Higher Secondary Education</div>
+  <div class="meta">📍 Bengaluru | Apr 2019 – Mar 2020</div>
 </section>
 
 <footer>
-  <p>© 2025 Vanipenta Bhanuprakash Reddy | All rights reserved</p>
+  <p>© 2026 Vanipenta Bhanuprakash Reddy</p>
   <p><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">📧 Get In Touch</a></p>
 </footer>
 
